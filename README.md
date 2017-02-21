@@ -10,7 +10,7 @@ $ npm run start
 ```
 #Current Tech Stack:
 ###Backend
-- [Express](http://expressjs.com/) server stuff
+- [Koa2](http://koajs.com/) server stuff
 - [Mongoose](http://mongoosejs.com/) ODM for mongoDB integration
 
 ###Frontend
