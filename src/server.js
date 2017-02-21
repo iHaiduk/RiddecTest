@@ -2,8 +2,10 @@
  * Created by igor on 20.02.17.
  */
 import Koa from 'koa';
+import path from 'path';
 import React from 'react';
 import cookie from 'koa-cookie';
+import staticF from 'koa-static';
 import convert from 'koa-convert';
 import session from 'koa-session2';
 import Helmet from 'react-helmet';
@@ -27,6 +29,7 @@ app.use(session({
 }, app));
 app.use(convert(body()));
 app.use(cookie());
+app.use(staticF(path.resolve(__dirname, 'public')));
 
 // uses async arrow functions
 app.use(async(ctx, next) => {
