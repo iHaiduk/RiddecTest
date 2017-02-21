@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm run build",
-    "start": "NODE_PATH=$NODE_PATH:./shared node --harmony .",
+    "start": "node --harmony .",
     "startdev": "nodemon index.js",
     "dev": "npm run startdev & webpack-dev-server --progress --color",
-    "build": "NODE_ENV=production webpack --progress --color -p --config webpack.production.config.js"
+    "build": "./node_modules/.bin/webpack --progress --color -p --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",
