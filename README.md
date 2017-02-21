@@ -8,6 +8,9 @@ $ npm i
 ```console
 $ npm run start
 ```
+
+And go to [Browser](http://localhost:3000/)
+
 #Current Tech Stack:
 ###Backend
 - [Koa2](http://koajs.com/) server stuff
